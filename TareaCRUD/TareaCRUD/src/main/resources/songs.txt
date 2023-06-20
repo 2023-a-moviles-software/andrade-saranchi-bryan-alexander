@@ -1,0 +1,2 @@
+1,Propuesta,Romeo,3.0,25-01-200,false,124
+2,The bitter end,Metallica,3.11,02-06-2010,false,186
