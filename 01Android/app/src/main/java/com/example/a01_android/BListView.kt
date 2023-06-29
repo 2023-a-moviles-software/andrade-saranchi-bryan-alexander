@@ -1,5 +1,6 @@
 package com.example.a01_android
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
@@ -9,6 +10,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
+import androidx.appcompat.app.AlertDialog
 import java.util.zip.Inflater
 
 class BListView : AppCompatActivity() {
@@ -36,6 +38,7 @@ class BListView : AppCompatActivity() {
         registerForContextMenu(listView)
 
 
+
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
@@ -50,10 +53,43 @@ class BListView : AppCompatActivity() {
             }
             else -> super.onContextItemSelected(item)
         }
+    }
 
+    fun abrirDialogo(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Desea eliminar?")
+        builder.setPositiveButton(
+            "Aceptar",
+            DialogInterface.OnClickListener{ //callback
+                dialog, which -> //ALGUNA COSA
+            }
+        )
+        builder.setNegativeButton("Cancelar",null)
+
+        val opciones = resources.getStringArray(
+            R.array.string_array_opciones_dialogo
+        )
+
+        val seleccionPrevia = booleanArrayOf(
+            true, //Lunes seleccionado
+            false, //Martes no seleccionado
+            false, //Miercoles no seleccionado
+        )
+
+        builder.setMultiChoiceItems(
+            opciones,
+            seleccionPrevia,
+            {
+                dialog, which, isChecked ->
+                "Dio clic en el item ${which}"
+            }
+        )
+        val dialog = builder.create()
 
 
     }
+
+
 
     override fun onCreateContextMenu(
         menu: ContextMenu?,
@@ -77,5 +113,8 @@ class BListView : AppCompatActivity() {
         )
         adapter.notifyDataSetChanged()
     }
+
+
+
 
 }
