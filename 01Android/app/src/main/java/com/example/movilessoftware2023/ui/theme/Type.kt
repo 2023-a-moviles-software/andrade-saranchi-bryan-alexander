@@ -1,4 +1,4 @@
-package com.example.a01_android.ui.theme
+package com.example.movilessoftware2023.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

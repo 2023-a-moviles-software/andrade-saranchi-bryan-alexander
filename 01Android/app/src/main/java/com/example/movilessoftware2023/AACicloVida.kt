@@ -1,4 +1,4 @@
-package com.example.a01_android
+package com.example.movilessoftware2023
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -8,7 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.a01_android.databinding.ActivityAacicloVidaBinding
+import com.example.movilessoftware2023.databinding.ActivityAacicloVidaBinding
 
 class AACicloVida : AppCompatActivity() {
 

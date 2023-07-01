@@ -1,11 +1,11 @@
-package com.example.a01_android
+package com.example.movilessoftware2023
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ACicloVida : AppCompatActivity() {
+class ECrudEntrenador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_aciclo_vida)
+        setContentView(R.layout.activity_ecrud_entrenador)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.a01_android
+package com.example.movilessoftware2023
 
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
@@ -11,7 +11,6 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
 import androidx.appcompat.app.AlertDialog
-import java.util.zip.Inflater
 
 class BListView : AppCompatActivity() {
     val arreglo = BbaseDatosMemoria.arregloBEntrenador

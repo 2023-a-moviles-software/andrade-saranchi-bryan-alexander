@@ -1,4 +1,4 @@
-package com.example.a01_android
+package com.example.movilessoftware2023
 
 import android.app.Activity
 import android.content.Intent
@@ -6,9 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
-import android.util.Log
 import android.widget.Button
-import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 
 class MainActivity : AppCompatActivity() {

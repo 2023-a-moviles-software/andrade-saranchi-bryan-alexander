@@ -1,1 +1,0 @@
-package com.example.a01_android.ui.theme

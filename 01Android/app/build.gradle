@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.a01_android'
+    namespace 'com.example.movilessoftware2023'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.a01_android"
+        applicationId "com.example.movilessoftware2023"
         minSdk 24
         targetSdk 33
         versionCode 1
