@@ -16,7 +16,7 @@ class AACicloVida : AppCompatActivity() {
     private lateinit var binding: ActivityAacicloVidaBinding
     var textoGlobal = ""
 
-    fun mostarSnackbar(texto : String){
+    fun mostrarSnackbar(texto : String){
         textoGlobal += texto
         Snackbar.make(
             findViewById(R.id.cl_ciclo_vida),
@@ -44,7 +44,39 @@ class AACicloVida : AppCompatActivity() {
                 .setAnchorView(R.id.fab)
                 .setAction("Action", null).show()
         }
+        mostrarSnackbar("onCreate")
     }
+
+    override fun onStart() {
+        super.onStart()
+        mostrarSnackbar("onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mostrarSnackbar("onResume")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        mostrarSnackbar("onRestart")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        mostrarSnackbar("onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mostrarSnackbar("onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mostrarSnackbar("onDestroy")
+    }
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_aaciclo_vida)
