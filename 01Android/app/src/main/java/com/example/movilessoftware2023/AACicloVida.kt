@@ -1,6 +1,7 @@
 package com.example.movilessoftware2023
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -82,5 +83,26 @@ class AACicloVida : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_aaciclo_vida)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.run {
+            //Guardar las variables
+            //Primitivas
+            putString("variableTextoGuardado", textoGlobal)
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(
+        savedInstanceState: Bundle,
+    ) {
+        super.onRestoreInstanceState(savedInstanceState)
+        //Recuperar las variables primitivas
+        val textoRecuperado: String? = savedInstanceState.getString("variableTextoGuardado")
+        if(textoRecuperado != null){
+            mostrarSnackbar(textoRecuperado)
+            textoGlobal = textoRecuperado
+        }
     }
 }
