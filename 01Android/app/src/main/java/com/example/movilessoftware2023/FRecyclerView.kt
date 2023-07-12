@@ -11,11 +11,9 @@ class FRecyclerView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_frecycler_view)
-        //Definir lista
+        // Definir lista
         inicializarRecyclerView()
-
     }
-
     fun inicializarRecyclerView(){
         val recyclerView = findViewById<RecyclerView>(
             R.id.rv_entrenadores
@@ -40,4 +38,5 @@ class FRecyclerView : AppCompatActivity() {
         )
         totalLikesTextView.text = totalLikes.toString()
     }
+
 }
