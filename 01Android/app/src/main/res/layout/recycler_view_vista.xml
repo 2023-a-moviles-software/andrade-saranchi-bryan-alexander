@@ -5,30 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <Button
         android:id="@+id/btn_dar_like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:text="Dar like"
         app:layout_constraintEnd_toEndOf="@+id/tv_cedula"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/tv_cedula"
         app:layout_constraintTop_toBottomOf="@+id/tv_cedula" />
-
-
 
     <TextView
         android:id="@+id/tv_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="124dp"
+        android:layout_marginEnd="36dp"
         android:text="Nombre"
         app:layout_constraintBottom_toBottomOf="@+id/tv_cedula"
         app:layout_constraintEnd_toStartOf="@+id/tv_cedula"
         app:layout_constraintTop_toTopOf="@+id/tv_cedula"
         app:layout_constraintVertical_bias="0.0" />
-
-
 
     <TextView
         android:id="@+id/tv_cedula"
@@ -42,12 +40,11 @@
         app:layout_constraintVertical_bias="0.233" />
 
 
-
     <TextView
         android:id="@+id/tv_likes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_marginStart="40dp"
         android:text="Likes"
         app:layout_constraintBottom_toBottomOf="@+id/tv_cedula"
         app:layout_constraintStart_toEndOf="@+id/tv_cedula"
