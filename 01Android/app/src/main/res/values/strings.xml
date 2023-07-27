@@ -54,4 +54,5 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_frecylcler_view">FRecylclerView</string>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
 </resources>
