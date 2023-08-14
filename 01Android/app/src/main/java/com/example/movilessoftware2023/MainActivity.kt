@@ -111,8 +111,8 @@ class MainActivity : AppCompatActivity() {
                 irActividad(GGoogleMaps::class.java)
             }
 
-        val botonUIAuth = findViewById<Button>(R.id.btn_intent_firebase_ui)
-        botonUIAuth
+        val botonUiAuth = findViewById<Button>(R.id.btn_intent_firebase_ui)
+        botonUiAuth
             .setOnClickListener {
                 irActividad(HFirebaseUIAuth::class.java)
             }
@@ -142,6 +142,7 @@ class MainActivity : AppCompatActivity() {
         callbackContenidoIntentExplicito
             .launch(intentExplicito)
     }
+
 
 
 
