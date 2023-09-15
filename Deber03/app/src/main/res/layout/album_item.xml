@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_albumId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Id" />
+
+        <TextView
+            android:id="@+id/tv_albumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_albumId"
+            app:layout_constraintTop_toBottomOf="@+id/tv_albumId"
+            tools:text="Eres mia" />
+
+        <TextView
+            android:id="@+id/tv_albumArtista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_albumName"
+            app:layout_constraintStart_toEndOf="@+id/tv_albumName"
+            app:layout_constraintTop_toTopOf="@+id/tv_albumName"
+            tools:text="Romeo Santos" />
+
+        <TextView
+            android:id="@+id/tv_albumAnioLanzamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="2001"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_albumArtista"
+            app:layout_constraintStart_toEndOf="@+id/tv_albumArtista"
+            app:layout_constraintTop_toTopOf="@+id/tv_albumArtista"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_albumEsExplicito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:text="Explicito"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_albumAnioLanzamiento"
+            app:layout_constraintStart_toEndOf="@+id/tv_albumAnioLanzamiento"
+            app:layout_constraintTop_toTopOf="@+id/tv_albumAnioLanzamiento"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

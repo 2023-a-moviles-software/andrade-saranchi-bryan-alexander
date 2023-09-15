@@ -16,6 +16,9 @@
         android:theme="@style/Theme.01Android"
         tools:targetApi="33">
         <activity
+            android:name=".IFirestore"
+            android:exported="false" />
+        <activity
             android:name=".HFirebaseUIAuth"
             android:exported="false" />
         <activity
@@ -34,7 +37,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyCZnHvMtkadW64vde1xUHNfG2xWw6awITsAIzaSyCZnHvMtkadW64vde1xUHNfG2xWw6awITs" />
 
         <activity
             android:name=".GoogleMapsInicio"
